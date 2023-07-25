@@ -12,4 +12,8 @@ public interface UserClient {
     //true为审核通过，false为其他
     @PostMapping("/isSellerSafe")
     Result isSellerSafe(String openId);
+
+    @PostMapping("/getUseridByName")
+    public Result getUseridByName(String user_name);
+
 }
