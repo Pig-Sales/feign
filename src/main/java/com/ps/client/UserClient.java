@@ -15,6 +15,6 @@ public interface UserClient {
     Result isSellerSafe(@RequestBody User user);
 
     @PostMapping("/getUseridByName")
-    Result getUseridByName(String user_name);
+    Result getUseridByName(@RequestBody User user);
 
 }
