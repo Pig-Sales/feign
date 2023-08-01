@@ -17,4 +17,7 @@ public interface UserClient {
     @PostMapping("/getUseridByName")
     Result getUseridByName(@RequestBody User user);
 
+    @PostMapping("/getUserInfoById")
+    Result getUserInfoById(@RequestBody User user);
+
 }
