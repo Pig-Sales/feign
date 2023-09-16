@@ -4,7 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.ps</groupId>
+    <parent>
+        <groupId>com.ps</groupId>
+        <artifactId>ps_parent</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
     <artifactId>feign</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -19,13 +24,11 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
-            <version>3.1.5</version>
         </dependency>
         <!--        负载均衡-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-loadbalancer</artifactId>
-            <version>3.1.5</version>
         </dependency>
         <!--        jsonObject类的依赖-->
         <dependency>
@@ -49,4 +52,14 @@
         </repository>
     </distributionManagement>
 
+    <repositories>
+        <repository>
+            <id>utils</id>
+            <url>https://raw.githubusercontent.com/Pig-Sales/utils/main/repo</url>
+        </repository>
+        <repository>
+            <id>ps_parent</id>
+            <url>https://raw.githubusercontent.com/Pig-Sales/ps_parent/main</url>
+        </repository>
+    </repositories>
 </project>
