@@ -8,6 +8,7 @@
         <groupId>com.ps</groupId>
         <artifactId>ps_parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../ps_parent/pom.xml</relativePath>
     </parent>
 
     <artifactId>feign</artifactId>
@@ -45,21 +46,4 @@
         </dependency>
     </dependencies>
 
-    <distributionManagement>
-        <repository>
-            <id>feign</id>
-            <url>file:${basedir}/repo</url>
-        </repository>
-    </distributionManagement>
-
-    <repositories>
-        <repository>
-            <id>utils</id>
-            <url>https://raw.githubusercontent.com/Pig-Sales/utils/main/repo</url>
-        </repository>
-        <repository>
-            <id>ps_parent</id>
-            <url>https://raw.githubusercontent.com/Pig-Sales/ps_parent/main</url>
-        </repository>
-    </repositories>
 </project>
