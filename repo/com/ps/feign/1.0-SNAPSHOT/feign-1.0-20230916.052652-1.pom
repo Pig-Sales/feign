@@ -8,21 +8,16 @@
         <groupId>com.ps</groupId>
         <artifactId>ps_parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../ps_parent/pom.xml</relativePath>
     </parent>
 
     <artifactId>feign</artifactId>
     <version>1.0-SNAPSHOT</version>
-
-
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
-
 
     <dependencies>
         <!--        feign-->
@@ -57,4 +52,14 @@
         </repository>
     </distributionManagement>
 
+    <repositories>
+        <repository>
+            <id>utils</id>
+            <url>https://raw.githubusercontent.com/Pig-Sales/utils/main/repo</url>
+        </repository>
+        <repository>
+            <id>ps_parent</id>
+            <url>https://raw.githubusercontent.com/Pig-Sales/ps_parent/main</url>
+        </repository>
+    </repositories>
 </project>
