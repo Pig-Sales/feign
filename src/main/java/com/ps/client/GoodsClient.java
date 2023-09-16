@@ -13,4 +13,5 @@ public interface GoodsClient {
     @PostMapping("/goods/updateGoodsNumber")
     Result updateGoodsNumber(@RequestBody Goods goods);
 
+
 }
