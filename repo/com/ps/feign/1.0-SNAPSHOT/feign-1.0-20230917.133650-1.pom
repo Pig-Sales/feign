@@ -53,4 +53,15 @@
         </repository>
     </distributionManagement>
 
+    <repositories>
+        <repository>
+            <id>utils</id>
+            <url>https://raw.githubusercontent.com/Pig-Sales/utils/main/repo</url>
+        </repository>
+        <repository>
+            <id>ps_parent</id>
+            <url>https://raw.githubusercontent.com/Pig-Sales/ps_parent/main/repo</url>
+        </repository>
+    </repositories>
+
 </project>
